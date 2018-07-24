@@ -1,0 +1,41 @@
+.form
+	background: #fff
+	border-radius: 10px
+	color: $text
+	text-align: center
+	padding: 40px 55px
+
+	label.error
+		position: absolute
+		top: -20px
+		right: 0
+		left: 0
+		transition: all .3s
+		animation: error .3s linear 1 forwards
+		color: red
+		text-align: center
+		font-weight: 600
+
+	&__btn
+		background: linear-gradient(to right, #050958, #3137a2)
+		width: 100%
+		color: #fff
+		font-weight: 700
+		text-transform: none
+		box-shadow: 0 0 20px rgba(4, 8, 86, .5)
+		border: none
+		padding: 18px 0
+		&:hover
+			background: linear-gradient(to right, #3137a2, #3137a2)
+		&:focus
+			background: linear-gradient(to right, #050958, #050958)
+
+	&__sub-title
+		font-size: 14px
+		font-weight: 400
+		margin-bottom: 10px
+
+	&__text
+		font-size: 12px
+		color: #4c4c4c
+		margin-bottom: 25px

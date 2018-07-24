@@ -1,0 +1,149 @@
+@import "fonts"
+
+
+//----------------------fonts---------------------
+$fonts: 'Open Sans', sans-serif
+$fontawesome: 'fontawesome', sans-serif
+//---------------------end-fonts---------------------
+
+
+//----------------------color---------------------
+$accent: rgb(255, 204, 1)
+$text: #212121
+
+$dark: #212121
+//---------------------end-color---------------------
+
+
+html, body
+	height: 100%
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 400px
+	font-family: $fonts
+	font-size: 14px
+	color: $dark
+	line-height: 1.75
+	font-weight: 400
+
+::selection
+	background-color: $accent
+	color: #fff
+
+section
+	overflow: hidden
+	
+h1, h2, h3, h4, h5, h6
+	font-weight: 700
+	line-height: 1.3
+	margin: 0
+	padding: 0
+
+h1
+	font-size: 42px
+	color: #fff
+	margin-bottom: 80px
+
+h2
+	text-align: center
+	font-size: 48px
+	font-weight: 300
+	margin-bottom: 50px
+
+h3
+	font-size: 18px
+	margin-bottom: 20px
+	
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+i
+	font-style: normal
+	font-size: 16px
+	color: #fff
+
+input, textarea
+	border: none
+	border-radius: 0
+	outline: none
+	box-shadow: none
+	-webkit-appearance: none
+	background-color: #fafafa
+	width: 100%
+	margin-bottom: 15px
+	&:focus:required:invalid
+		border: none
+		outline: none
+		box-shadow: none
+		-webkit-appearance: non
+	&:required:valid
+		border: none
+		outline: none
+		box-shadow: none
+		-webkit-appearance: non
+
+	&::placeholder
+		color: #808080
+		font-size: 14px
+		line-height: 1
+
+input
+	padding: 15px 25px
+	border-radius: 40px
+	font-weight: 400
+	line-height: 1
+	text-align: center
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+a,
+a:focus,
+a:hover
+	outline: none
+
+.link
+	position: relative
+	z-index: 1
+	font-size: 14px
+	font-weight: 600
+	color: $text
+	text-transform: uppercase
+	&::before
+		content: ''
+		width: 0
+		transform: scale(0)
+		transition: all .3s
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 1px
+		background-color: $accent
+		z-index: -1
+
+	&:hover
+		color: $accent
+		text-decoration: none
+		&::before
+			transform: scale(1)
+
+	&:focus
+		color: $accent
+		text-decoration: none
+		&::before
+			transform: scale(1)
+
+
+@import "_base/preloader"
+@import "_base/btn"
+@import "_base/form"
+@import "_base/modal"
+@import "_base/hamburger"

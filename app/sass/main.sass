@@ -1,0 +1,400 @@
+@import "libs"
+@import "base"
+@import "page"
+
+.menu
+	position: fixed
+	left: 0
+	top: 0
+	bottom: 0
+	width: 280px
+	height: 100%
+	background-color: #040856
+
+	ul
+		a
+			position: relative
+			display: block
+			padding: 13px 0 13px 60px
+			text-transform: uppercase
+			transition: all .3s
+			color: #fff
+			width: 100%
+			font-weight: 300
+			&:hover
+				text-decoration: none
+				background-color: #1d2285
+				&::before
+					display: block
+			&:focus
+				text-decoration: none
+				background-color: #1d2285
+			&::before
+				content: ""
+				display: none
+				width: 100%
+				position: absolute
+				height: 2px
+				bottom: 0
+				left: 0
+				background: #1525ba
+
+	li
+		position: relative
+		&::after
+			content: ""
+			width: 100%
+			position: absolute
+			height: 1px
+			top: 0
+			left: 0
+			background: #3137A2
+		&:first-child
+			&::after
+				background: none
+
+		img
+			position: absolute
+			left: 20px
+
+.logo
+	display: block
+	width: 115px
+	height: 60px
+	margin: 38px auto
+
+.info
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 5px
+	color: #fff
+
+	i
+		transform: rotate(90deg)
+		font-size: 12px
+		margin-right: 10px
+
+	a
+		color: #fff
+		font-size: 14px
+		&:focus
+			text-decoration: none
+		&:hover
+			text-decoration: none
+
+	p
+		margin: 14px 0
+
+	&__mail
+		margin-bottom: 15px
+
+.header
+	background-image: url(../img/header-bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 120px 0 140px
+	color: #fff
+
+	&__content
+		display: flex
+		flex-direction: row
+		margin-bottom: 105px
+
+		p
+			position: relative
+			padding-left: 30px
+			&::before
+				content: ""
+				position: absolute
+				left: 0
+				height: 100%
+				width: 1px
+				background: #fff
+	
+	ul
+		display: flex
+		flex-direction: row
+		li
+			margin-right: 160px
+
+		div
+			display: flex
+			flex-direction: row
+			font-size: 16px
+			font-weight: 700
+			margin-bottom: 5px
+		p
+			font-size: 12px
+			line-height: 21px
+
+	.namber
+		font-size: 36px
+		font-weight: 800
+		line-height: 1.2
+		margin-right: 10px
+
+.work
+	padding-top: 80px
+	padding-bottom: 90px
+
+	img
+		display: block
+		margin: 0 auto
+
+	&__list
+		display: flex
+		flex-direction: row
+		justify-content: center
+		flex-wrap: wrap
+	
+	&__item
+		width: 23%
+		margin-right: 30px
+		border: 1px solid #f2f2f2
+		margin-bottom: 30px
+		transition: all .3s
+		&:hover
+			box-shadow: 0 15px 25px rgba(0, 0, 0, .1)
+			border: 1px solid #fff
+		&:nth-child(4n)
+			margin-right: 0
+		&:nth-child(n+5)
+			margin-bottom: 0
+
+.estimate
+	background-image: url(../img/estimate-bg.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 90px 0 20px
+	text-align: center
+
+	img
+		width: 270px
+		height: 300px
+		border-radius: 5px
+		box-shadow: 0 0 15px rgba(0, 0, 0, .25)
+		margin-bottom: 20px
+	
+	p
+		font-size: 16px
+		margin-bottom: 30px
+
+	span
+		display: block
+		margin-bottom: 18px
+	
+	i
+		font-size: 14px
+		color: $text
+
+	b
+		font-size: 20px
+
+	&__card
+		width: 23%
+		margin-right: 15%
+		margin-bottom: 70px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		&:nth-child(3n)
+			margin-right: 0
+
+	&__list
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		flex-wrap: wrap
+
+	&__btn
+		display: inline-block
+		padding: 15px 66px
+		background: linear-gradient(to right, #050958, #3137a2)
+		border-radius: 50px
+		color: #fff
+		font-weight: 700
+		&:hover
+			text-decoration: none
+			color: #fff
+		&:focus
+			text-decoration: none
+			color: #fff
+
+.workers
+	background-image: url(../img/workers-bg.png)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 70px 0 75px
+	
+	h2
+		margin-bottom: 70px
+
+	img
+		width: 330px
+		height: 350px
+		margin-bottom: 25px
+
+	li
+		position: relative
+		padding-left: 30px
+		line-height: 1.6
+		margin-bottom: 5px
+		&::before
+			content: "•"
+			position: absolute
+			left: -5px
+			color: #050958
+			font-size: 26px
+			line-height: 1.2
+
+	&__list
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		margin-bottom: 60px
+
+	&__card
+		position: relative
+		width: 32%
+		padding: 20px
+		margin-right: 30px
+		background: #f7f7f7
+		z-index: 1
+		&::before
+			content: ""
+			position: absolute
+			left: 0
+			top: 0
+			width: 150px
+			height: 125px
+			background: linear-gradient(to right, #050958, #3137a2)
+			z-index: -1
+	
+	.name
+		text-align: center
+		font-size: 18px
+		font-weight: 700
+
+	.position
+		text-align: center
+		font-size: 12px
+		color: #808080
+		line-height: 18px
+		margin-bottom: 10px
+	
+	&__content
+		position: relative
+		width: 100%
+		background: #fff
+		border-radius: 10px
+		padding: 40px 30px
+		box-shadow: 5px 0 20px rgba(0, 0, 0, .03)
+		&::before
+			content: ""
+			position: absolute
+			left: 50%
+			bottom: -15px
+			transform: translate(-50%, 0)
+			background: rgba(0, 0, 0, .03)
+			width: 95%
+			height: 40px
+			z-index: -1
+			border-radius: 5px
+		&::after
+			content: ""
+			position: absolute
+			left: 50%
+			bottom: -25px
+			transform: translate(-50%, 0)
+			background: rgba(0, 0, 0, .03)
+			width: 90%
+			height: 40px
+			z-index: -1
+			border-radius: 5px
+
+		p
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0
+
+	.man
+		position: absolute
+		right: 45px
+		top: 80px
+		width: 160px
+		height: 170px
+		z-index: 2
+
+	.exam
+		position: absolute
+		right: 125px
+		top: 35px
+		width: 220px
+		height: 240px
+		z-index: 1
+
+.application
+	background-image: url(../img/application-bg.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 65px 0
+	color: #fff
+
+	h2
+		font-size: 42px
+		font-weight: 700
+		text-align: left
+		margin-bottom: 0
+
+	h3
+		font-size: 24px
+		font-weight: 400
+		margin-bottom: 25px
+	
+	h4
+		font-size: 26px
+		margin-bottom: 5px
+
+	.sub-title
+		font-size: 21px
+		font-weight: 300
+		margin-bottom: 40px
+
+	li
+		display: flex
+		flex-direction: row
+		margin-bottom: 20px
+
+		p
+			font-size: 16px
+			line-height: 1.5
+			font-weight: 300
+
+	.namber
+		width: 40px
+		height: 40px
+		background: #fff
+		margin-right: 30px
+		font-size: 26px
+		font-weight: 700
+		color: $text
+		line-height: 40px
+		text-align: center
+	
+	&__form
+		margin-top: 50px
+		padding: 30px 55px 40px
+
+
+
+
+
+.footer
+	height: 1000px
+@import "media" // Always at the end
