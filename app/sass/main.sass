@@ -10,6 +10,7 @@
 	width: 280px
 	height: 100%
 	background-color: #040856
+	z-index: 1000
 
 	ul
 		a
@@ -356,10 +357,6 @@
 		font-size: 24px
 		font-weight: 400
 		margin-bottom: 25px
-	
-	h4
-		font-size: 26px
-		margin-bottom: 5px
 
 	.sub-title
 		font-size: 21px
@@ -391,10 +388,234 @@
 		margin-top: 50px
 		padding: 30px 55px 40px
 
+.value
+	background-image: url(../img/value-bg.png)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	padding-top: 110px
+	padding-bottom: 120px
+
+	h2
+		text-align: left
+		font-weight: 700
+		margin-bottom: 10px
+	
+	ul
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+
+	li
+		display: flex
+		align-items: center
+		width: 50%
+		margin-bottom: 40px
+		font-size: 16px
+		font-weight: 600
+		&:nth-child(odd)
+			margin-right: 7%
+		&:nth-child(even)
+			width: 43%
+
+	.circle
+		position: relative
+		width: 80px
+		height: 80px
+		border-radius: 100%
+		background-color: #fff
+		box-shadow: 0 0 80px rgba(4, 8, 86, .25)
+		margin-right: 30px
+
+		img
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
 
 
+	.sub-title
+		font-size: 21px
+		margin-bottom: 50px
+	
+	&__block
+		h2
+			margin-top: 170px
+			margin-right: 165px
+			text-align: center
 
+	&__img-absolute
+		position: absolute
+		top: -20px
+		right: 75px
+		z-index: -1
+
+.conditions
+	background-image: url(../img/conditions-bg.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	padding-top: 70px
+	padding-bottom: 85px
+	color: #fff
+	text-align: center
+
+	h2
+		line-height: 50px
+		margin-bottom: 30px
+		span
+			font-size: 36px
+
+	p
+		font-size: 21px
+		margin-bottom: 50px
+
+	.btn
+		width: auto
+		padding: 18px 40px
+		background: linear-gradient(to right, #fff, #e5e5e5)
+		font-weight: 700
+		text-transform: none
+		box-shadow: 0 0 30px rgba(255, 255, 255, .5)
+		&:hover
+			background: linear-gradient(to right, #fff, #fff)
+			box-shadow: 0 0 40px rgba(255, 255, 255, .5)
+		&:focus
+			background: linear-gradient(to right, #e5e5e5, #e5e5e5)
+			box-shadow: 0 0 40px rgba(255, 255, 255, .5)
+
+#map
+	height: 480px
+
+.map
+	position: relative
+
+	.container
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+
+	h3
+		font-weight: 700
+		font-size: 32px
+		margin-bottom: 0
+	
+	ul
+		display: flex
+		flex-direction: column
+
+	li
+		position: relative
+		padding-left: 40px
+		font-size: 16px
+		margin-bottom: 10px
+
+	i
+		position: absolute
+		left: 0
+		top: 5px
+		font-size: 20px
+		color: $accent
+
+	a
+		font-size: 16px
+		color: $text
+		font-weight: 700
+		transition: all .3s
+		&:hover
+			color: $accent
+		&:focus
+			color: $accent
+
+	span
+		font-size: 14px
+
+	.fa-phone
+		transform: rotate(90deg)
+
+	.sub-title
+		font-size: 18px
+		font-weight: 300
+		line-height: 27px
+		margin-bottom: 15px
+
+	.mail
+		font-weight: 400
+
+	&__info
+		position: absolute
+		top: 55px
+		left: 20px
+		overflow: hidden
+		background-color: #fff
+		z-index: 100
+		padding: 30px 40px
+
+	&__img-abcolute
+		position: absolute
+		bottom: 0
+		right: -120px
+		z-index: -1
 
 .footer
-	height: 1000px
+	background-color: #010214
+	padding: 40px 0
+	
+	&__container
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		margin-bottom: 30px
+
+	&__logo
+		img
+			width: 175px
+			height: 90px
+
+	ul
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		width: 40%
+
+	li
+		margin-right: 30px
+
+	a
+		color: #fff
+		&::before
+			background-color: #fff
+	
+	&__info
+		display: flex
+		flex-direction: column
+		text-align: right
+		&_call
+			font-size: 24px
+			font-weight: 700
+
+		&_order
+			font-size: 12px
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+			&:focus
+				text-decoration: none
+	
+	&__copy
+		text-align: center
+		font-size: 12px
+		color: #333
+		a
+			color: #333
+			&:hover
+				color: #fff
+				text-decoration: none
+			&:focus
+				color: #fff
+				text-decoration: none
+
 @import "media" // Always at the end

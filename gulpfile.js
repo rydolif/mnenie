@@ -34,7 +34,7 @@ gulp.task('styles', function() {
 	.pipe(sass({ outputStyle: 'expand' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
-	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
+	// .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('app/css'))
 	.pipe(browsersync.reload( {stream: true} ))
 });
@@ -45,10 +45,10 @@ gulp.task('js', function() {
 		'app/libs/jquery.validate.js',
 		'app/libs/jquery.mask.min.js',
 		'app/libs/jquery.popupoverlay.js',
-		'app/libs/swiper/swiper.min.js',
+		// 'app/libs/swiper/swiper.min.js',
 		// 'app/libs/fancybox/jquery.fancybox.js',
-		'app/libs/animation/wow.min.js',
-		'app/libs/myParallax.js',
+		// 'app/libs/animation/wow.min.js',
+		// 'app/libs/myParallax.js',
 		// 'app/libs/video/jquery.mb.YTPlayer.js',
 		'app/js/common.js', // Always at the end
 		])

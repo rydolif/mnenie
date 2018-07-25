@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Мнение</title>
+	<title>Коммерческой недвижимости</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -50,7 +50,7 @@
 			<h1>Выгодно определим стоимость <br>коммерческой недвижимости</h1>
 
 			<div class="header__content">
-				<a href="#" class="green-btn">Заказать консультацию</a>
+				<a href="#" class="green-btn consultation_open">Заказать консультацию</a>
 				<p>Закажите бесплатную консультацию <br>для подготовки необходимого набора документов</p>
 			</div>
 
@@ -86,25 +86,25 @@
 			<h2><strong>С нами уже работают </strong><br>крупнейшие компании на рынке</h2>
 
 			<div class="work__list">
-				<a href="#" class="work__item">
+				<a href="#" class="work__item" target="_blank">
 					<img src="img/work/1.jpg" alt="img">
 				</a>
-				<a href="#" class="work__item">
+				<a href="#" class="work__item" target="_blank">
 					<img src="img/work/2.jpg" alt="img">
 				</a>
-				<a href="#" class="work__item">
+				<a href="#" class="work__item" target="_blank">
 					<img src="img/work/3.jpg" alt="img">
 				</a>
-				<a href="#" class="work__item">
+				<a href="#" class="work__item" target="_blank">
 					<img src="img/work/4.jpg" alt="img">
 				</a>
-				<a href="#" class="work__item">
+				<a href="#" class="work__item" target="_blank">
 					<img src="img/work/5.jpg" alt="img">
 				</a>
-				<a href="#" class="work__item">
+				<a href="#" class="work__item" target="_blank">
 					<img src="img/work/6.jpg" alt="img">
 				</a>
-				<a href="#" class="work__item">
+				<a href="#" class="work__item" target="_blank">
 					<img src="img/work/7.jpg" alt="img">
 				</a>
 			</div>
@@ -122,37 +122,37 @@
 					<img src="img/estimate/1.jpg" alt="img">
 					<p>Получить кредит <br>в банке под залог объекта</p>
 					<span>от <b>2490</b> <i>₽</i></span>
-					<a href="#" class="estimate__btn">Выбрать</a>
+					<a href="#" class="estimate__btn estimate-one_open">Выбрать</a>
 				</div>
 				<div class="estimate__card">
 					<img src="img/estimate/2.jpg" alt="img">
 					<p>Подготовить объект к сделке <br>купли продажи или аренде</p>
 					<span>от <b>3490</b> <i>₽</i></span>
-					<a href="#" class="estimate__btn">Выбрать</a>
+					<a href="#" class="estimate__btn estimate-two_open">Выбрать</a>
 				</div>
 				<div class="estimate__card">
 					<img src="img/estimate/3.jpg" alt="img">
 					<p>Определить стоимость доли для <br>ее продажи или выкупа</p>
 					<span>от <b>3990</b> <i>₽</i></span>
-					<a href="#" class="estimate__btn">Выбрать</a>
+					<a href="#" class="estimate__btn estimate-three_open">Выбрать</a>
 				</div>
 				<div class="estimate__card">
 					<img src="img/estimate/4.jpg" alt="img">
 					<p>Застраховать объект</p>
 					<span>от <b>2490</b> <i>₽</i></span>
-					<a href="#" class="estimate__btn">Выбрать</a>
+					<a href="#" class="estimate__btn estimate-four_open">Выбрать</a>
 				</div>
 				<div class="estimate__card">
 					<img src="img/estimate/5.jpg" alt="img">
 					<p>Определить размер арендной <br>ставки объекта</p>
 					<span>от <b>3990</b> <i>₽</i></span>
-					<a href="#" class="estimate__btn">Выбрать</a>
+					<a href="#" class="estimate__btn estimate-five_open">Выбрать</a>
 				</div>
 				<div class="estimate__card">
 					<img src="img/estimate/6.jpg" alt="img">
 					<p>Определить стоимость объекта <br>при ликвидации или <br>реорганизации компании</p>
 					<span>от <b>3990</b> <i>₽</i></span>
-					<a href="#" class="estimate__btn">Выбрать</a>
+					<a href="#" class="estimate__btn estimate-six_open">Выбрать</a>
 				</div>
 			</div>
 		</div>
@@ -250,8 +250,8 @@
 						<p class="form__sub-title">Наши специалисты свяжутся с вами в течении 10 минут в рабочее время</p>
 						<p class="form__text">Мы работаем по будням с 10 до 20 часов</p>
 
-						<input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
-						<input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+						<div><input type="text" class="form__field" name="name" placeholder="Ваше имя" required></div>
+						<div><input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
 						<button type="submit" class="btn form__btn" name="submit">Заказать консультацию</button>
 
 					</form>
@@ -260,69 +260,317 @@
 			</div>
 		</div>
 	</section>
+	
+	<section class="section value">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-7">
+					<h2>При оценке <br>будут учтены все</h2>
+					<p class="sub-title">индивидуальные особенности вашего объекта</p>
+
+					<ul>
+						<li>
+							<div class="circle">
+								<img src="img/icon/bus-stop.svg" alt="icon" width="45" height="45">
+							</div>
+							<p>Местоположение и <br>транспортная доступность</p>
+						</li>
+						<li>
+							<div class="circle">
+								<img src="img/icon/house-size.svg" alt="icon" width="45" height="45">
+							</div>
+							<p>Площадь объекта и <br>его состояние</p>
+						</li>
+						<li>
+							<div class="circle">
+								<img src="img/icon/mortgage.svg" alt="icon" width="45" height="45">
+							</div>
+							<p>Рентабельность объекта</p>
+						</li>
+						<li>
+							<div class="circle">
+								<img src="img/icon/sketch.svg" alt="icon" width="45" height="45">
+							</div>
+							<p>Конструкция и <br>планировка объекта</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-lg-5">
+					<div class="value__block">
+						<h2>Стоимость <br>объекта</h2>
+						<img src="img/value-img.png" alt="img" class="value__img-absolute">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="conditions section">
+		<div class="container">
+			
+			<h2><strong>Мы предлагаем</strong> одни из самых лучших <br><span>условий для оценки коммерческой недвижимости</span></h2>
+
+			<p>Стоимость оценки коммерческой недвижимости у нас начинается всего от 8000р. и зависит от
+				<br>типа объекта и целей его оценки. <b>Свяжитесь с нами, чтобы рассчитать точную стоимость услуг.</b>
+			</p>
+
+			<a href="#" class="btn conditions_open">Узнать стоимость оценки</a>
+
+		</div>
+	</section>
+	
+	<section class="map">
+
+		<div id="map"></div>
+
+		<div class="container">
+
+			<div class="map__info">
+				<h3>Приглашаем вас</h3>
+				<p class="sub-title">к нам в офис для обсуждения <br>всех деталей проекта</p>
+				<ul>
+					<li>
+						<p><i class="fas fa-map-marker-alt"></i> <b>г. Москва,</b> рядом с м. Румянцево <br>БП "Румянцево", корпус. Г, офис 807</p>
+					</li>
+					<li>
+						<p>
+							<i class="fas fa-phone"></i>
+							<a href="tel:84992701299" class="link">8 (499) 270-12-99</a>
+							<br>
+							<a href="tel:88001003254" class="link">8 (800) 100-32-54 </a><span> (По России бесплатно)</span>
+						</p>
+					</li>
+					<li>
+						<i class="fas fa-envelope"></i>
+						<a href="mailto:info@ok-mnenie.ru" class="mail link">info@ok-mnenie.ru</a>
+					</li>
+				</ul>
+				<img src="img/map__info-bg.svg" alt="map" class="map__img-abcolute">
+			</div>
+
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="container">
 
+			<div class="footer__container">
+
+				<a href="#" class="footer__logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
+
+				<ul>
+					<li><a href="#" class="link">Недвижимость</a></li>
+					<li><a href="#" class="link">Транспорт</a></li>
+					<li><a href="#" class="link">Бизнес</a></li>
+					<li><a href="#" class="link">Оборудование</a></li>
+					<li><a href="#" class="link">Ценные бумаги</a></li>
+					<li><a href="#" class="link">Контакты</a></li>
+					<li><a href="#" class="link">Блог</a></li>
+				</ul>
+
+				<div class="footer__info">
+					<a href="tel:+74992701299" class="link footer__info_call">+7 (499) 270-12-99</a>
+					<a href="#" class="footer__info_order">Заказать звонок</a>
+				</div>
+			</div>
+
+			<div class="footer__copy">
+				<p>© 2018 <a href="http://ok-mnenie.ru" target="_blank">ok-mnenie.ru</a> | All rights reserved.</p>
+			</div>
 		</div>
 	</footer>
 
+	<!-- script -->
+	<script>
+		function initMap(){var e=new google.maps.Map(document.getElementById("map"),{zoom:16,center:{lat:55.6371256,lng:37.4230953},styles:[{featureType:"administrative",elementType:"labels.text.fill",stylers:[{color:"#002c6f"}]},{featureType:"administrative.locality",elementType:"all",stylers:[{visibility:"simplified"},{color:"#dc1b2e"}]},{featureType:"landscape",elementType:"all",stylers:[{color:"#e5f1ff"}]},{featureType:"poi",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"poi.attraction",elementType:"labels.icon",stylers:[{visibility:"on"},{hue:"#0060ff"}]},{featureType:"poi.business",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"all",stylers:[{saturation:-100},{lightness:45}]},{featureType:"road.highway",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"road.arterial",elementType:"labels.icon",stylers:[{visibility:"off"},{lightness:"61"}]},{featureType:"transit",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"water",elementType:"all",stylers:[{color:"#4d9eff"},{visibility:"on"}]}]});new google.maps.Marker({position:{lat:55.6371256,lng:37.4270953},map:e,icon:"img/icon/mark.png"})}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmnk4RCDwjSucIJ2WXRnLkuCrsWR4DUM4&callback=initMap"></script>
+	<!-- script end -->
 
-<!-- 
-	<div class="modal" id="order">
+	<!-- modal  -->
+		<div class="modal" id="consultation">
 
-			<form action="sendmail.php" class="order-form" method="post">
+			<button class="close consultation_close" type="button">
+				<img src="img/icon/close.svg" alt="close" width="25" height="25">
+			</button>
 
-				<input type="hidden" name="subject" value="Оформление заказа">
-				<input type="hidden" name="product" value="Стуло">
+			<form action="sendmail.php" class="form consultation-form" method="post">
+				<input type="hidden" name="subject" value="Заказать консультацию">
 				
-				<button class="close order_close" type="button">
-					<img src="img/icon/close.svg" alt="close" width="25" height="25">
-				</button>
+				<h4>Оставьте заявку</h4>
 
-				<h2>Оформление заказа</h2>
-				<p class="sub-title">Вы заказываете</p>
+				<p class="form__sub-title">Наши специалисты свяжутся с вами в течении 10 минут в рабочее время</p>
+				<p class="form__text">Мы работаем по будням с 10 до 20 часов</p>
 
-				<div class="modal__container">
-					<p>Arm Chair Queens Cosy Blue</p>
-					<div class="calculat">
-
-					<div class="quantity-block">
-						<button type="button" class="pluse button">+</button>
-							<input class="number num" type="number" name="number" value="1" data-price="15495" readonly>
-						<button type="button" class="minus button">-</button>
-					</div>
-
-					</div>
-					<b><span class="price">15 495</span><span> руб.</span></b>
-				</div>
-				
-
-				<h3>Ваши контактые данные</h3>
-
-				<div class="form-group">
-					<div><input type="text" class="form__field" name="name" placeholder="Введите ваше имя" required></div>
-					<div><input type="tel" name="phone" class="form__field" required placeholder="Ведите ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
-					<div><button type="submit" class="btn" name="submit" value="отправить">оформить заказ</button></div>
-				</div>
-
+				<div><input type="text" class="form__field" name="name" placeholder="Ваше имя" required></div>
+				<div><input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+				<button type="submit" class="btn form__btn" name="submit">Заказать консультацию</button>
 
 			</form>
-	</div>
-	
-	<div class="modal" id="thanks">
-		<button class="close thanks_close" type="button">
-					<img src="img/icon/close.svg" alt="close" width="25" height="25">
-		</button>
+		</div>
 
-		<h2>Спасибо <br>за доверие!</h2>
-		<p>Мы обязательно с вами свяжемся!</p>
-		<img src="img/modal.jpg" alt="modal">
-	</div> -->
+		<div class="modal" id="estimate-one">
+
+			<button class="close estimate-one_close" type="button">
+				<img src="img/icon/close.svg" alt="close" width="25" height="25">
+			</button>
+
+			<form action="sendmail.php" class="form" method="post">
+				<input type="hidden" name="subject" value="Получить кредит в банке под залог объекта от 2490 ₽">
+				
+				<h4>Оставьте заявку</h4>
+
+				<p class="form__sub-title">Наши специалисты свяжутся с вами в течении 10 минут в рабочее время</p>
+				<p class="form__text">Получить кредит в банке под залог объекта от 2490 ₽</p>
+
+				<div><input type="text" class="form__field" name="name" placeholder="Ваше имя" required></div>
+				<div><input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+				<button type="submit" class="btn form__btn" name="submit">Заказать консультацию</button>
+
+			</form>
+		</div>
+
+		<div class="modal" id="estimate-two">
+
+			<button class="close estimate-two_close" type="button">
+				<img src="img/icon/close.svg" alt="close" width="25" height="25">
+			</button>
+
+			<form action="sendmail.php" class="form" method="post">
+				<input type="hidden" name="subject" value="Подготовить объект к сделке купли продажи или аренде от 3490 ₽">
+				
+				<h4>Оставьте заявку</h4>
+
+				<p class="form__sub-title">Наши специалисты свяжутся с вами в течении 10 минут в рабочее время</p>
+				<p class="form__text">Подготовить объект к сделке купли продажи или аренде от 3490 ₽</p>
+
+				<div><input type="text" class="form__field" name="name" placeholder="Ваше имя" required></div>
+				<div><input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+				<button type="submit" class="btn form__btn" name="submit">Заказать консультацию</button>
+
+			</form>
+		</div>
+
+		<div class="modal" id="estimate-three">
+
+			<button class="close estimate-three_close" type="button">
+				<img src="img/icon/close.svg" alt="close" width="25" height="25">
+			</button>
+
+			<form action="sendmail.php" class="form" method="post">
+				<input type="hidden" name="subject" value="Определить стоимость доли для ее продажи или выкупа от 3990 ₽">
+				
+				<h4>Оставьте заявку</h4>
+
+				<p class="form__sub-title">Наши специалисты свяжутся с вами в течении 10 минут в рабочее время</p>
+				<p class="form__text">Определить стоимость доли для ее продажи или выкупа от 3990 ₽</p>
+
+				<div><input type="text" class="form__field" name="name" placeholder="Ваше имя" required></div>
+				<div><input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+				<button type="submit" class="btn form__btn" name="submit">Заказать консультацию</button>
+
+			</form>
+		</div>
+
+		<div class="modal" id="estimate-four">
+
+			<button class="close estimate-four_close" type="button">
+				<img src="img/icon/close.svg" alt="close" width="25" height="25">
+			</button>
+
+			<form action="sendmail.php" class="form" method="post">
+				<input type="hidden" name="subject" value="Застраховать объект от 2490 ₽">
+				
+				<h4>Оставьте заявку</h4>
+
+				<p class="form__sub-title">Наши специалисты свяжутся с вами в течении 10 минут в рабочее время</p>
+				<p class="form__text">Застраховать объект от 2490 ₽</p>
+
+				<div><input type="text" class="form__field" name="name" placeholder="Ваше имя" required></div>
+				<div><input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+				<button type="submit" class="btn form__btn" name="submit">Заказать консультацию</button>
+
+			</form>
+		</div>
+
+		<div class="modal" id="estimate-five">
+
+			<button class="close estimate-five_close" type="button">
+				<img src="img/icon/close.svg" alt="close" width="25" height="25">
+			</button>
+
+			<form action="sendmail.php" class="form" method="post">
+				<input type="hidden" name="subject" value="Определить размер арендной ставки объекта от 3990 ₽">
+				
+				<h4>Оставьте заявку</h4>
+
+				<p class="form__sub-title">Наши специалисты свяжутся с вами в течении 10 минут в рабочее время</p>
+				<p class="form__text">Определить размер арендной ставки объекта от 3990 ₽</p>
+
+				<div><input type="text" class="form__field" name="name" placeholder="Ваше имя" required></div>
+				<div><input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+				<button type="submit" class="btn form__btn" name="submit">Заказать консультацию</button>
+
+			</form>
+		</div>
+
+		<div class="modal" id="estimate-six">
+
+			<button class="close estimate-six_close" type="button">
+				<img src="img/icon/close.svg" alt="close" width="25" height="25">
+			</button>
+
+			<form action="sendmail.php" class="form" method="post">
+				<input type="hidden" name="subject" value="Определить стоимость объекта при ликвидации или реорганизации компании от 3990 ₽">
+				
+				<h4>Оставьте заявку</h4>
+
+				<p class="form__sub-title">Наши специалисты свяжутся с вами в течении 10 минут в рабочее время</p>
+				<p class="form__text">Определить стоимость объекта при ликвидации или реорганизации компании от 3990 ₽</p>
+
+				<div><input type="text" class="form__field" name="name" placeholder="Ваше имя" required></div>
+				<div><input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+				<button type="submit" class="btn form__btn" name="submit">Заказать консультацию</button>
+
+			</form>
+		</div>
+
+		<div class="modal" id="conditions">
+
+			<button class="close conditions_close" type="button">
+				<img src="img/icon/close.svg" alt="close" width="25" height="25">
+			</button>
+
+			<form action="sendmail.php" class="form" method="post">
+				<input type="hidden" name="subject" value="Узнать стоимость оценки">
+				
+				<h4>Узнать стоимость оценки</h4>
+
+				<p class="form__sub-title">Наши специалисты свяжутся с вами в течении 10 минут в рабочее время</p>
+				<p class="form__text">Мы работаем по будням с 10 до 20 часов</p>
+
+				<div><input type="text" class="form__field" name="name" placeholder="Ваше имя" required></div>
+				<div><input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+				<button type="submit" class="btn form__btn" name="submit">Узнать стоимость оценки</button>
+
+			</form>
+		</div>
+
+		<div class="modal" id="thanks">
+			<button class="close thanks_close" type="button">
+						<img src="img/icon/close.svg" alt="close" width="25" height="25">
+			</button>
+
+			<h2>Спасибо <br>за доверие!</h2>
+			<p>Мы обязательно с вами свяжемся!</p>
+		</div>
+	<!-- modal end -->
 
 	<script src="js/scripts.min.js"></script>
-	<script>
-		new WOW().init();
-	</script>
 </body>
 </html>

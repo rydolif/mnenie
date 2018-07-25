@@ -8,7 +8,7 @@ $fontawesome: 'fontawesome', sans-serif
 
 
 //----------------------color---------------------
-$accent: rgb(255, 204, 1)
+$accent: #050958
 $text: #212121
 
 $dark: #212121
@@ -113,10 +113,6 @@ a:hover
 .link
 	position: relative
 	z-index: 1
-	font-size: 14px
-	font-weight: 600
-	color: $text
-	text-transform: uppercase
 	&::before
 		content: ''
 		width: 0
@@ -130,13 +126,11 @@ a:hover
 		z-index: -1
 
 	&:hover
-		color: $accent
 		text-decoration: none
 		&::before
 			transform: scale(1)
 
 	&:focus
-		color: $accent
 		text-decoration: none
 		&::before
 			transform: scale(1)
