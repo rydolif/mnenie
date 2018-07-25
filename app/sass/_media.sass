@@ -1,85 +1,467 @@
 
+@media only screen and (max-width : 1920px)
+	.wrap
+		margin-left: 280px
+
+	.container
+		margin-left: 90px
+
+@media only screen and (max-width : 1600px)
+	.container
+		max-width: 960px
+	
+	.work
+		&__list
+			justify-content: space-between
+
+		&__item
+			width: 47%
+			margin-right: 0
+			&:nth-child(n+5)
+				margin-bottom: 30px
+
+	.workers
+		img
+			width: 100%
+			height: auto
+
+		.exam
+			display: none
+
+		.man
+			display: none
+
+		.man
+			right: 0
+			text-align: left
+			bottom: 0
+
+	.application
+		h2
+			br
+				display: none
+
+		&__form
+			padding: 20px
+	
+	.value
+		li
+			width: 40%
+			margin-right: 5%
+			&:nth-child(odd)
+				width: 50%
+				margin-right: 0
+			&:nth-child(even)
+				width: 45%
+				margin-right: 5%
+
+		.circle
+			width: 60px
+			height: 60px
+			margin-right: 10px
+			img
+				width: 30px
+				height: 30px
+	
+	.conditions
+		p
+			br
+				display: none
+
+@media only screen and (max-width : 1350px)
+	.container
+		margin-left: 30px
+
+	.estimate
+		img
+			width: 100%
+			height: 200px
+
+@media only screen and (max-width : 1270px)
+	.container
+		max-width: 880px
+
+	.value
+		.col-xl-5
+			display: none
+	.form
+		h4
+			font-size: 24px
+
 @media only screen and (max-width : 1200px)
+	.container
+		width: 100%
+		margin-left: 0
 
+	.row
+		max-width: 880px
+		width: 100%
+
+	.section
+		padding: 40px 0
+	
 	.header
+		padding: 100px 0
+
+	h1
+		br
+			display: none
+
+	h2
+		font-size: 36px
+		br
+			display: none
+
+	.application
+		h2
+			font-size: 36px
+
+	.estimate
+		&__card
+			width: 31%
+			margin-right: 3%
+
+		img
+			height: 240px
+			width: auto
+
+	.workers
+		&__list
+			flex-wrap: wrap
+			justify-content: space-between
+
+		&__card
+			width: 48%
+			margin: 0 0 30px 0
 
 
-@media only screen and (max-width : 992px)
-	#thanks
-		padding: 40px
+	.application
+		li
+			br
+				display: none
 
-	.modal
-		width: 320px
-		padding: 40px
+		&__form
+			margin: 0 auto
+	
+	.map
+		&__info
+			padding: 25px
 
-	.nav
-		position: fixed
-		display: block
-		width: 320px
-		height: 100%
-		flex-direction: column
-		right: -100%
-		top: 80px
-		z-index: -1
-		background: rgba(0, 0, 0, .9)
-		transition: all .3s
+	.footer
+		&__container
+			flex-direction: column
+			align-items: center
+
+		&__logo
+			margin-bottom: 30px
 
 		ul
-			display: flex
+			margin-bottom: 30px
 			flex-direction: column
-			justify-content: center
-			margin-top: 40px
-			margin-left: 40px
 
 		li
-			margin: 0
-			margin-bottom: 10px
+			margin-right: 0
 
-		a
-			color: #fff
-			display: block
-			&::before
-				content: ''
-				width: 0
-				transform: scale(0)
-				transition: all .3s
-				position: absolute
-				bottom: 0
-				width: 80%
-				height: 1px
-				background-color: $accent
-				z-index: -1
+		&__info
+			text-align: center
 
-			&:hover
-				color: $accent
-				text-decoration: none
-				&::before
-					transform: scale(1)
+	.form
+		max-width: 320px
 
-			&:focus
-				color: $accent
-				text-decoration: none
-				&::before
-					transform: scale(1)
+@media only screen and (max-width : 992px)
+	.wrap
+		margin-left: 240px
 
-	.hamburger
-		display: block
-		z-index: 1001
-		right: 15px
+	.menu
+		width: 240px
+	
+	.container
+		max-width: 880px
+	
+	.header
+		ul
+			justify-content: space-between
+			li
+				margin-right: 0
 
-	.hamburger-box
-		right: 0
+		&__content
+			p
+				padding-left: 15px
 
+	.green-btn
+		width: 240px
+		height: 60px
+		line-height: 60px
+		padding: 0
+		margin-right: 15px
 
+	.value
+		li
+			&:nth-child(even)
+				margin-right: 0
+				width: 50%
+	
+	.estimate
+		&__list
+			justify-content: space-between
+
+		&__card
+			width: 48%
+			margin-right: 0
+
+	.workers
+		&__card
+			width: 100%
+			&:last-child
+				margin-bottom: 0
+
+	.estimate
+		p
+			margin-bottom: 15px
+
+		&__card
+			margin-bottom: 30px
+
+	.application
+		li
+			p
+				width: 100%
 
 @media only screen and (max-width : 767px)
+	.menu
+		width: 60px
+		z-index: -1
+
+	.wrap
+		margin-left: 60px
+
 	.header
+		padding: 60px 0
+		&__content
+			margin-bottom: 40px
+
+	h1
+		margin-bottom: 40px
+		font-size: 36px
+
+	h2
+		font-size: 30px
+		margin-bottom: 40px
+
+	.application
+		h2
+			font-size: 30px
+
+	.workers
+		h2
+			margin-bottom: 40px
+
+	.application
+		li
+			width: 100%
+
+		.namber
+			margin-right: 15px
+
+	.conditions
+		h2
+			span
+				font-size: 26px
+	
+	.footer
+		&__logo
+			img
+				width: 130px
+				height: auto
 
 @media only screen and (max-width : 576px)
+	h1
+		font-size: 30px
+
+	h2
+		font-size: 26px
+
 	.header
+		padding: 40px 0
+		&__content
+			flex-wrap: wrap
+
+		.green-btn
+			margin-bottom: 20px
+			height: 50px
+			line-height: 50px
+
+		ul
+			flex-wrap: wrap
+		li
+			width: 48%
+			margin-bottom: 20px
+			br
+				display: none
+
+	.workers
+		&__content
+			padding: 15px
+
+	.work
+		&__item
+			width: 100%
+			&:last-child
+				margin-bottom: 0
+
+	.estimate
+		&__card
+			width: 100%
+			&:last-child
+				margin-bottom: 0
+
+		img
+			height: 230px
+			margin-bottom: 10px
+
+	.value
+		li
+			width: 100%
+			margin-bottom: 25px
+			&:last-child
+				margin-bottom: 0
+			&:nth-child(odd)
+				width: 100%
+			&:nth-child(even)
+				width: 100%
+
+			br
+				display: none
+	
+	.conditions
+		h2
+			line-height: 1.6
+			margin-bottom: 30px
+		p
 
 @media only screen and (max-width : 480px)
+
+	h1
+		font-size: 26px
+
+	h2
+		font-size: 22px
+		margin-bottom: 30px
+	
+	h3
+		font-size: 16px
+
+	p
+		font-size: 12px
+	
+	.form
+		h4
+			font-size: 22px
+
 	.header
+		ul
+			li
+				width: 100%
+	
+	.work
+		img
+			max-width: 100%
+
+	.workers
+		&__card
+			padding: 0
+
+		li
+			padding-left: 15px
+	
+	.value
+		.circle
+			margin: 0
+
+		li
+			flex-direction: column
+			text-align: center
+
+		.sub-title
+			font-size: 16px
+			margin-bottom: 20px
+
+		.row
+			margin: 0
+
+		.col-xl-7
+			padding: 0
+
+	.application
+		h2
+			font-size: 22px
+			span
+				font-size: 18px
+		
+		.sub-title
+			font-size: 18px
+
+		h3
+			font-size: 18px
+
+		.row
+			margin: 0
+
+		.col-xl-8
+			padding: 0
+
+		.col-xl-4
+			padding: 0
+	
+	.conditions
+		.btn
+			padding: 15px
+
+		h2
+			line-height: 1.4
+			span
+				font-size: 18px
+
+	#map
+		height: 350px
+
+	.map
+		h3
+			font-size: 22px
+		
+		a
+			font-size: 14px
+
+		.container
+			position: relative
+
+		&__info
+			position: relative
+			top: 0
+			left: 0
+			width: 100%
+			height: auto
+
+	.footer
+		padding: 15px 0
+
+		&__logo
+			margin-bottom: 20px
+
+		&__info
+			margin-bottom: 0
+			&_call
+				font-size: 18px
+
+		&__container
+			margin-bottom: 20px
+
+		ul
+			margin-bottom: 20px
+
+		li
+			text-align: center
+			width: 100%
 
 
 

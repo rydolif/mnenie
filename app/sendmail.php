@@ -1,5 +1,5 @@
 <?php
-	$SITE_TITLE = 'LeoLoft';
+	$SITE_TITLE = 'Mnenie';
 	$SITE_DESCR = '';
 
 	if ( isset($_POST) ) {
