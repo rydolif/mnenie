@@ -1,6 +1,5 @@
 @import "libs"
 @import "base"
-@import "page"
 
 //--------при переносі удалити-----------------------
 .menu
@@ -95,7 +94,7 @@
 //--------при переносі удалити-----------------------
 
 .header
-	background-image: url(../img/header-bg.jpg)
+	background-image: url(../images/header-bg.jpg)
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center
@@ -169,7 +168,7 @@
 			margin-bottom: 0
 
 .estimate
-	background-image: url(../img/estimate-bg.jpg)
+	background-image: url(../images/estimate-bg.jpg)
 	background-position: center
 	background-repeat: no-repeat
 	background-size: cover
@@ -195,9 +194,6 @@
 		font-size: 14px
 		color: $text
 
-	b
-		font-size: 20px
-
 	&__card
 		width: 23%
 		margin-right: 15%
@@ -208,6 +204,9 @@
 		align-items: center
 		&:nth-child(3n)
 			margin-right: 0
+
+		b
+			font-size: 20px
 
 	&__list
 		display: flex
@@ -230,7 +229,7 @@
 			color: #fff
 
 .workers
-	background-image: url(../img/workers-bg.png)
+	background-image: url(../images/workers-bg.png)
 	background-position: center
 	background-repeat: no-repeat
 	background-size: cover
@@ -344,7 +343,7 @@
 		z-index: 1
 
 .application
-	background-image: url(../img/application-bg.jpg)
+	background-image: url(../images/application-bg.jpg)
 	background-position: center
 	background-repeat: no-repeat
 	background-size: cover
@@ -393,7 +392,7 @@
 		padding: 30px 55px 40px
 
 .value
-	background-image: url(../img/value-bg.png)
+	background-image: url(../images/value-bg.png)
 	background-position: center
 	background-repeat: no-repeat
 	background-size: cover
@@ -455,7 +454,7 @@
 		z-index: -1
 
 .conditions
-	background-image: url(../img/conditions-bg.jpg)
+	background-image: url(../images/conditions-bg.jpg)
 	background-position: center
 	background-repeat: no-repeat
 	background-size: cover
@@ -484,9 +483,11 @@
 		&:hover
 			background: linear-gradient(to right, #fff, #fff)
 			box-shadow: 0 0 40px rgba(255, 255, 255, .5)
+			color: $text
 		&:focus
 			background: linear-gradient(to right, #e5e5e5, #e5e5e5)
 			box-shadow: 0 0 40px rgba(255, 255, 255, .5)
+			color: $text
 
 #map
 	height: 480px
@@ -622,4 +623,5 @@
 				color: #fff
 				text-decoration: none
 
+@import "page"
 @import "media" // Always at the end

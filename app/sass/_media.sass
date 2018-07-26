@@ -7,6 +7,11 @@
 		margin-left: 90px
 
 @media only screen and (max-width : 1600px)
+	.value--legacy
+		h2
+			br
+				display: none
+
 	.container
 		max-width: 960px
 	
@@ -89,6 +94,18 @@
 			font-size: 24px
 
 @media only screen and (max-width : 1200px)
+	.value--legacy
+		&__img-absolute
+			display: none
+
+		&__content
+			width: 100%
+			br
+				display: none
+
+		ul
+			width: 100%
+
 	.container
 		width: 100%
 		margin-left: 0
@@ -200,6 +217,8 @@
 			&:nth-child(even)
 				margin-right: 0
 				width: 50%
+			p
+				width: 75%
 	
 	.estimate
 		&__list
@@ -274,6 +293,13 @@
 				width: 130px
 				height: auto
 
+	.value--legacy
+		ul
+			margin-bottom: 30px
+			
+		&__content
+			margin-bottom: 30px
+
 @media only screen and (max-width : 576px)
 	h1
 		font-size: 30px
@@ -339,6 +365,9 @@
 			margin-bottom: 30px
 		p
 
+	.value--legacy
+		li
+			margin-bottom: 10px
 @media only screen and (max-width : 480px)
 
 	h1

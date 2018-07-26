@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+
+$title = 'Оценка коммерческой недвижимости | Мнение - Оценочная компания';
+$description = 'Оценочная компания Мнение - услуги по оценке коммерческой недвижимости в Москве и Московской области';
+$keywords = 'оценка коммерческой недвижимости, оценка коммерческой стоимости недвижимости, оценка объектов коммерческой недвижимости, оценка коммерческой недвижимости онлайн, оценка коммерческой недвижимости в москве, оценка рынка коммерческой недвижимости, оценка стоимости объекта коммерческой недвижимости, оценка коммерческой недвижимости недорого, оценка аренды коммерческой недвижимости, ООО мнение';
+
+require_once 'header.php'
+
+?>
+
+<!-- <!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -14,13 +24,13 @@
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body>
+<body> -->
 <!-- 
 	<div class="preloader">
 		<div class="pulse"></div>
 	</div>
  -->
-	<div class="menu">
+<!-- 	<div class="menu">
 		<a href="index.html" class="logo"><img src="images/logo.png" alt="logo" width="115" height="60"></a>
 
 		<nav>
@@ -40,11 +50,13 @@
 			<br>
 			<a href="tel:+88001003254"><i class="fas fa-phone"></i> 8 (800) 100-32-54</a>
 			<p>(Звонок по России БЕСПЛАТНЫЙ)</p>
-			<a href="mailto:info@ok-mnenie.ru" class="info__mail"><strong>Почта:</strong> info@ok-mnenie.ru</a>
+			<a href="mailto:info@ok-mnenie.ru" class="info__mail"><b>Почта:</b> info@ok-mnenie.ru</a>
 			<a href="#" class="btn">Наш прайс лист</a>
 		</div>
 	</div>
 	
+ -->
+
 	<div class="wrap">
 		<section class="header">
 			<div class="container">
@@ -84,7 +96,7 @@
 		<div class="work section">
 			<div class="container">
 
-				<h2><strong>С нами уже работают </strong><br>крупнейшие компании на рынке</h2>
+				<h2><b>С нами уже работают </b><br>крупнейшие компании на рынке</h2>
 
 				<div class="work__list">
 					<a href="#" class="work__item" target="_blank">
@@ -116,7 +128,7 @@
 		<section class="estimate section">
 			<div class="container">
 
-				<h2><strong>Мы знаем </strong>как правильно оценить <br>объект, если вам необходимо:</h2>
+				<h2><b>Мы знаем </b>как правильно оценить <br>объект, если вам необходимо:</h2>
 				
 				<div class="estimate__list">
 					<div class="estimate__card">
@@ -162,7 +174,7 @@
 		<section class="workers section">
 			<div class="container">
 				
-				<h2>У нас работают <strong>одни из лучших </strong><br>специалистов по оценки в России</h2>
+				<h2>У нас работают <b>одни из лучших </b><br>специалистов по оценки в России</h2>
 
 				<div class="workers__list">
 
@@ -312,7 +324,7 @@
 		<section class="conditions section">
 			<div class="container">
 				
-				<h2><strong>Мы предлагаем</strong> одни из самых лучших <br><span>условий для оценки коммерческой недвижимости</span></h2>
+				<h2><b>Мы предлагаем</b> одни из самых лучших <br><span>условий для оценки коммерческой недвижимости</span></h2>
 
 				<p>Стоимость оценки коммерческой недвижимости у нас начинается всего от 8000р. и зависит от
 					<br>типа объекта и целей его оценки. <b>Свяжитесь с нами, чтобы рассчитать точную стоимость услуг.</b>
@@ -573,6 +585,125 @@
 		</div>
 	<!-- modal end -->
 
+
+
+	<script type="text/javascript">
+	/* init Call Service */
+		var CallSiteId = '21ffdea9d220a054607fec37466ac564';
+		var CallBaseUrl = '//uptocall.com';
+		(function() {
+		var lt = document.createElement('script');
+		lt.type ='text/javascript';
+		lt.charset = 'utf-8';
+		lt.async = true;
+		lt.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + CallBaseUrl + '/widget/client.js?rnd='+Math.floor(Math.random(0,1000)*1000);
+		var sc = document.getElementsByTagName('script')[0];
+		if (sc) sc.parentNode.insertBefore(lt, sc);
+		else document.documentElement.firstChild.appendChild(lt);
+		})();
+	</script>
+
+
+	<script src="libs/jquery.ba-resize.min.js"></script>
+	<script src="libs/vide/jquery.vide.js"></script>
+<!-- 	<script src="app/app.min.js"></script>
+ -->
 	<script src="js/scripts.min.js"></script>
+
+<!-- 	<script>
+	    $(".fancybox").fancybox();
+	</script> -->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('.hamb').click(function(){
+				$(this).toggleClass('open');
+			});
+
+			$('.hamb').click(function(e) {
+				e.preventDefault();
+				
+				if($('.main-nav').hasClass('opened')) {
+					$(this).removeClass('open');
+					$('.main-nav').removeClass('opened');
+				} else {
+					$(this).addClass('open');
+					$('.main-nav').addClass('opened');
+				}
+				
+				if($('body').hasClass('l-with-subnav')) {
+					$('body').removeClass('l-with-subnav');
+				}
+				
+			});
+			
+			$('.main-nav a').click(function() {
+				if($('body').hasClass('l-with-subnav')) {
+					$('.hamb').removeClass('open');
+					$('.main-nav').removeClass('opened');
+				}
+			});
+
+		});
+	</script>
+
+	<!-- Yandex.Metrika counter
+	<script type="text/javascript">
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter36544045 = new Ya.Metrika({
+	                    id:36544045,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true,
+	                    trackHash:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/36544045" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<script type="application/ld+json">
+	{
+	  "@context" : "http://schema.org",
+	  "@type" : "Organization",
+	  "name" : "ok-mnenie",
+	  "url" : "http://ok-mnenie.ru",
+	  "sameAs" : [
+	    "https://vk.com/okmnenie",
+	    "https://www.facebook.com/mnenieok/",
+	    "https://twitter.com/mnenie777"
+	  ]
+	}
+	</script>
+
+	<!-- BEGIN JIVOSITE CODE {literal} -->
+	<script type='text/javascript'>
+	    (function(){ var widget_id = 'kslw2VAnnn';var d=document;var w=window;function l(){
+	        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+	<!-- {/literal} END JIVOSITE CODE -->
+
+
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+
 </body>
+
 </html>
