@@ -14,11 +14,20 @@
 		position: absolute
 		right: 0
 		top: 0
-		// background: #fff
 		display: block
 		border: none
 		outline: none
 		cursor: pointer
+		transition: all .2s
+		opacity: .6
+		&:hover
+			background: transparent
+			opacity: 1
+			transform: scale(1.1)
+		&:focus
+			background: transparent
+			opacity: 1
+			transform: scale(1.1)
 
 #thanks
 	width: 400px

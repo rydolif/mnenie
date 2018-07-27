@@ -17,7 +17,7 @@
 	
 	.work
 		&__list
-			justify-content: space-between
+			justify-content: space-around
 
 		&__item
 			width: 47%
@@ -186,6 +186,11 @@
 		max-width: 320px
 
 @media only screen and (max-width : 992px)
+	.value--legacy
+		h2
+			span
+				font-size: 20px
+				
 	.wrap
 		margin-left: 240px
 
@@ -301,6 +306,12 @@
 			margin-bottom: 30px
 
 @media only screen and (max-width : 576px)
+	.value--legacy
+		li
+			text-align: left
+			&:nth-child(even)
+				text-align: left
+
 	h1
 		font-size: 30px
 
@@ -370,7 +381,10 @@
 			margin-bottom: 10px
 			
 @media only screen and (max-width : 480px)
-
+	.value--legacy
+		li
+			&:nth-child(odd)
+				text-align: left
 	h1
 		font-size: 26px
 
